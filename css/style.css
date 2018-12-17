@@ -2,13 +2,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: ;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  color: ;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #29323c;
 
-  background-color: ;
+  background-color: #ffffff;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -38,4 +38,85 @@ img {
   width: 1170px;
 
   outline: 1px solid red;
+}
+
+.main-header {
+  position: absolute;
+
+  width: 100%;
+}
+
+.main-header .container {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 84px;
+  height: 31px;
+}
+
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation a {
+  color: #e8e8e8;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.title {
+  /*VREMENNO*/
+  min-height: 750px;
+  /*VREMENNO*/
+
+  text-align: center;
+  color: #e8e8e8;
+
+  background-color: #2b353f;
+  background-image: url('../img/title-img.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.title h1 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.title p {
+  margin: 0;
+  margin: 0 auto 33px;
+  padding: 0 10px;
+  width: 670px;
+  
+  font-weight: 300;
+  letter-spacing: -0.25px;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.title a {
+  display: inline-block;
+
+  color: #e8e8e8;
+  text-decoration: none;
+
+  border: 1px solid #f2f2f2;
+  border-radius: 22px;
 }
