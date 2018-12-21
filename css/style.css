@@ -68,6 +68,7 @@ img {
 
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .logo img {
@@ -85,14 +86,62 @@ img {
   width: 650px;
 }
 
-.site-navigation a {
+.main-navigation a {
   color: #e8e8e8;
   text-transform: uppercase;
   text-decoration: none;
+
+  cursor: pointer;
 }
 
-.site-navigation a:hover {
+.main-navigation a:hover {
   color: #29323c;
+}
+
+.menu-link {
+  position: relative;
+
+  display: block;
+  width: 82px;
+}
+
+.menu-link:hover span,
+.menu-link:hover span::before,
+.menu-link:hover span::after {
+  background-color: #29323c;
+}
+
+.menu-link span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  display: block;
+  width: 21px;
+  height: 3px;
+
+  background-color: #e8e8e8;
+}
+
+.menu-link span::before,
+.menu-link span::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+  width: 21px;
+  height: 3px;
+
+  background-color: #e8e8e8;
+}
+
+.menu-link span::before {
+  top: -7px;
+}
+
+.menu-link span::after {
+  top: 7px;
 }
 
 .title {
@@ -200,19 +249,10 @@ a.title-circle:hover  span.circle {
   margin-left: -1px;
 
   background-color: rgba(232, 232, 232, 0.7);
-
-  transition-duration: 2s, 2s, 2s, 0.7s;
-  transition-property: top, width, margin-left, background-color;
 }
 
 a.title-circle:hover  span.vertical-line {
-  top: -100px;
-
-  width: 500px;
-  margin-left: -250px;
-
-  background-color: transparent;
-  /*background-color: #29323c;*/
+  background-color: #29323c;
 }
 
 .services {
@@ -635,7 +675,7 @@ a.link-bio::after {
 }
 
 .partners {
-  padding: 43px 0;
+  padding: 35px 0;
 
   background-color: #f5f5f5;
 }
