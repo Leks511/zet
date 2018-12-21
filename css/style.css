@@ -148,20 +148,6 @@ a.title-circle {
   cursor: pointer;
 }
 
-a.title-circle:hover  span.arrow {
-  top: 19px;
-
-  border-color: #29323c;
-}
-
-a.title-circle:hover  span.circle {
-  border-color: #29323c;
-}
-
-a.title-circle:hover  span.vertical-line {
-  background-color: #29323c;
-}
-
 .title-circle .arrow {
   position: absolute;
   top: 14px;
@@ -174,6 +160,14 @@ a.title-circle:hover  span.vertical-line {
   transform: rotate(-45deg);
   border-left: 4px solid rgba(232, 232, 232, 0.7);
   border-bottom: 4px solid rgba(232, 232, 232, 0.7);
+
+  transition-duration: 0.1s;
+}
+
+a.title-circle:hover  span.arrow {
+  top: 19px;
+
+  border-color: #29323c;
 }
 
 .title-circle .circle {
@@ -187,6 +181,12 @@ a.title-circle:hover  span.vertical-line {
 
   border: 1px solid rgba(232, 232, 232, 0.7);
   border-radius: 50%;
+
+  transition-duration: 0.1s;
+}
+
+a.title-circle:hover  span.circle {
+  border-color: #29323c;
 }
 
 .title-circle .vertical-line {
@@ -196,10 +196,23 @@ a.title-circle:hover  span.vertical-line {
 
   display: block;
   width: 2px;
-  height: 113px;
+  height: 110px;
   margin-left: -1px;
 
   background-color: rgba(232, 232, 232, 0.7);
+
+  transition-duration: 2s, 2s, 2s, 0.7s;
+  transition-property: top, width, margin-left, background-color;
+}
+
+a.title-circle:hover  span.vertical-line {
+  top: -100px;
+
+  width: 500px;
+  margin-left: -250px;
+
+  background-color: transparent;
+  /*background-color: #29323c;*/
 }
 
 .services {
