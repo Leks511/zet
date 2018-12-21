@@ -213,7 +213,7 @@ a.title-circle {
   transition-duration: 0.1s;
 }
 
-a.title-circle:hover  span.arrow {
+a.title-circle:hover .arrow {
   top: 19px;
 
   border-color: #29323c;
@@ -234,7 +234,7 @@ a.title-circle:hover  span.arrow {
   transition-duration: 0.1s;
 }
 
-a.title-circle:hover  span.circle {
+a.title-circle:hover .circle {
   border-color: #29323c;
 }
 
@@ -251,7 +251,7 @@ a.title-circle:hover  span.circle {
   background-color: rgba(232, 232, 232, 0.7);
 }
 
-a.title-circle:hover  span.vertical-line {
+a.title-circle:hover .vertical-line {
   background-color: #29323c;
 }
 
