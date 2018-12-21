@@ -567,7 +567,7 @@ a.title-circle:hover  span.vertical-line {
   width: 270px;
   padding-bottom: 30px;
 
-  background-color: rgba(242, 242, 242, 0.75)
+  background-color: rgba(242, 242, 242, 0.75);
 }
 
 .worker h3.worker-name {
