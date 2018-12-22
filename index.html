@@ -327,20 +327,29 @@
     </section>
 
     <section class="contact-us">
-      <div class="column">
-        <img class="map-image" src="" alt="">
+      <h2 class="visually-hidden">Contact us</h2>
+      <div class="contact-column">
+        <img class="map-image" width="800" height="650" src="img/maps.jpg" alt="You can find us! Our address is: bla bla bla">
       </div>
-      <div class="column">
-        <form action="">
-          <label for="">Name</label>
-          <input type="text">
-          <label for="">Email</label>
-          <input type="text">
-          <label for="">Phone</label>
-          <input type="text">
-          <label for="">Message</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button type="subit">Submit</button>
+      <div class="contact-column">
+        <form class="contact-form" method="GET" action="">
+          <p class="form-part">
+            <label for="client-field">Name</label>
+            <input type="text" id="client-field" name="client-name">
+          </p>
+          <p class="form-part">
+            <label for="email-field">Email</label>
+            <input type="email" id="email-field" name="client-email">
+          </p>
+          <p class="form-part">
+            <label for="phone-field">Phone</label>
+            <input type="phone" id="phone-field" name="client-phone">
+          </p>
+          <div class="form-part">
+            <label for="message-field">Message</label>
+            <textarea name="client-message" id="message-field" cols="40" rows="10"></textarea>
+          </div>
+          <button class="form-submit" type="subit">Submit</button>
         </form>
       </div>
     </section>
