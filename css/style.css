@@ -332,7 +332,7 @@ a.title-circle:hover .vertical-line {
 }
 
 .works {
-  padding: 100px 0 0;
+  padding: 100px 0 50px;
   text-align: center;
 }
 
@@ -374,13 +374,31 @@ a.title-circle:hover .vertical-line {
   margin: 0;
   padding: 0;
 
-  height: auto;
   display: flex;
   flex-wrap: wrap;
+  width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.work-item {
+  width: 320px;
+  height: 200px;
+}
+
+.work-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.work-item img {
+  width: 320px;
+  height: 200px;
 }
 
 .clients {
-  padding: 100px 0 100px;
+  padding: 50px 0 100px;
 
   text-align: center;
 }
@@ -1019,7 +1037,7 @@ div.form-part > label {
 .contact-form button.form-submit {
   align-self: flex-end;
   width: 120px;
-  height: 45px;
+  padding: 4px 10px;
 
   font-family: "Montressat", "Arial", sans-serif;
   font-weight: 700;
@@ -1030,4 +1048,66 @@ div.form-part > label {
   background-color: transparent;
   border: 1px solid rgba(242, 242, 242, 0.7);
   border-radius: 2px;
+}
+
+.main-footer {
+  padding: 45px 50px;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer .left-part,
+.main-footer .right-part {
+  width: 370px;
+}
+
+.left-part {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  margin: 0;
+
+  margin-right: 25px;
+}
+
+.footer-logo img {
+  width: 82px;
+  height: 30px;
+}
+
+p.copyright {
+  margin: 0;
+
+  color: #29323c;
+  letter-spacing: -0.25px;
+}
+
+.right-part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-part b {
+  margin-right: 27px;
+
+  font-weight: 400;
+  color: #29323c;
+  letter-spacing: -0.25px;
+}
+
+.right-part ul.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
 }
