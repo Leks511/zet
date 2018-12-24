@@ -787,7 +787,58 @@ a.link-bio::after {
   background-color: #545b63;
 }
 
+.pack-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
+  display: flex;
+}
+
+.pack-item {
+  width: 384px;
+
+  border: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+.pack-item.best-pack {
+  margin: -100px -1px 0;
+  padding: 100px 0 0;
+}
+
+.pack-item .pack-head-wrapper {
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+.pack-item h3.pack-name {
+  margin: 0;
+
+  margin-bottom: 25px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #485563;
+}
+
+.pack-price {
+  margin: 0;
+
+  font-weight: 300;
+  color: rgba(41, 50, 60, 0.8);
+  text-transform: uppercase;
+}
+
+span.price {
+  display: block;
+  margin-bottom: 22px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 45px;
+  line-height: 9px;
+  font-weight: 600;
+}
 
 .contact-us {
   display: flex;
