@@ -14,7 +14,7 @@
         <img src="img/zet-logo.png" alt="ZET logo" width="84" height="31">
       </div>
       <nav class="main-navigation">
-        <!--<ul class="site-navigation">
+        <ul class="site-navigation">
           <li><a href="#">home</a></li>
           <li><a href="#">services</a></li>
           <li><a href="#">works</a></li>
@@ -22,8 +22,8 @@
           <li><a href="#">team</a></li>
           <li><a href="#">prices</a></li>
           <li><a href="#">contacts</a></li>
-        </ul>-->
-        <a class="menu-link">menu<span></span></a>
+        </ul>
+        <!--<a class="menu-link">menu<span></span></a>-->
       </nav>
     </div>
   </header>
@@ -49,24 +49,32 @@
         <ul class="service-list">
           <li class="service-item">
             <img src="img/laptop3.png" alt="" width="120" height="120">
-            <h3>FULLY RESPONSIVE</h3>
-            <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+            <div class="service-text-wrap">
+              <h3>FULLY RESPONSIVE</h3>
+              <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+            </div>
           </li>
           <li class="service-item">
             <img src="img/adjust2.png" alt="" width="120" height="120">
-            <h3>EASY CUSTOMIZE</h3>
-            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-            vitae.</p>
+            <div class="service-text-wrap">
+              <h3>EASY CUSTOMIZE</h3>
+              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+              vitae.</p>
+            </div>
           </li>
           <li class="service-item">
             <img src="img/map7.png" alt="" width="120" height="120">
-            <h3>SEO READY</h3>
-            <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi</p>
+            <div class="service-text-wrap">
+              <h3>SEO READY</h3>
+              <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi</p>
+            </div>
           </li>
           <li class="service-item">
             <img src="img/heart19.png" alt="" width="120" height="120">
-            <h3>MADE WITH LOVE</h3>
-            <p>ecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero. vulputate eget, arcu.</p>
+            <div class="service-text-wrap">
+              <h3>MADE WITH LOVE</h3>
+              <p>ecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero. vulputate eget, arcu.</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -319,8 +327,8 @@
 
     <section class="contact-us">
       <h2 class="visually-hidden">Contact us</h2>
-      <div class="contact-column">
-        <img class="map-image" width="800" height="650" src="img/maps.jpg" alt="You can find us! Our address is: bla bla bla">
+      <div class="contact-column map-column">
+        
       </div>
       <div class="contact-column">
         <form class="contact-form" method="GET" action="/html">
@@ -347,13 +355,14 @@
   </main>
   <footer class="main-footer">
     <div class="container">
-      <div class="left-part">
+      <div class="left-part footer-part">
         <div class="footer-logo">
           <img width="82" height="30" src="img/footer-logo.png" alt="ZET's logotype">
         </div>
         <p class="copyright">&copy; Copyright 2015. Allright Reserved</p>
       </div>
-      <div class="right-part">
+      <section class="right-part footer-part">
+        <h2 class="visually-hidden">Our social contacts</h2>
         <b>Stay In Touch</b>
         <ul class="social-links">
           <li><a href="#"><span class="visually-hidden">Facebook</span><img  width="35" height="35" src="img/facebook7.png" alt="Icon of Facebook"></a></li>
@@ -361,7 +370,7 @@
           <li><a href="#"><span class="visually-hidden">Google plus</span><img width="35" height="35" src="img/social92.png" alt="Icon of Google Plus"></a></li>
           <li><a href="#"><span class="visually-hidden">Dribble</span><img width="35" height="35" src="img/dribble.png" alt="Icon of Dribble"></a></li>
         </ul>
-      </div>
+      </section>
     </div>
   </footer>
   <script src="js/script.js"></script>
