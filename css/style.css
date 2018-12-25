@@ -382,14 +382,45 @@ a.title-circle:hover .vertical-line {
 }
 
 .work-item {
+  position: relative;
+
   width: 320px;
   height: 200px;
 }
 
 .work-item a {
-  display: block;
+  position: absolute;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+
+  background-color: rgba(45, 54, 65, 0.7);
+}
+
+.work-item:hover > a {
+  display: flex;
+}
+
+.work-name {
+  display: block;
+
+  font-size: 15px;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+.work-type {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(242, 242, 242, 0.8);
 }
 
 .work-item img {
@@ -796,18 +827,49 @@ a.link-bio::after {
 }
 
 .pack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 384px;
+  padding-bottom: 35px;
 
-  border: 1px solid rgba(221, 221, 221, 0.5);
+  border: 1px solid #eeeeee;
 }
 
 .pack-item.best-pack {
-  margin: -100px -1px 0;
-  padding: 100px 0 0;
+  position: relative;
+
+  width: 398px;
+  margin: -40px -1px 0;
+  padding: 40px 0;
+}
+
+.pack-item.best-pack::before {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  width: 400px;
+  height: 5px;
+
+  background-color: #485563;
 }
 
 .pack-item .pack-head-wrapper {
-  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+  align-self: stretch;
+  padding: 20px 65px 25px;
+  margin-bottom: auto;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.pack-item .pack-description-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 230px;
+  padding: 15px 65px;
 }
 
 .pack-item h3.pack-name {
@@ -820,6 +882,18 @@ a.link-bio::after {
   line-height: 36px;
   font-weight: 700;
   color: #485563;
+}
+
+.best-pack h3.pack-name {
+  color: #29323c;
+}
+
+.pack-item p.pack-description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 40px;
+  color: #29323c;
 }
 
 .pack-price {
@@ -838,6 +912,27 @@ span.price {
   font-size: 45px;
   line-height: 9px;
   font-weight: 600;
+}
+
+.best-pack span.price {
+  color: #29323c;
+}
+
+a.pack-sign {
+  margin-top: auto;
+  width: 95px;
+  padding: 2px 15px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #e8e8e8;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #485563;
+  border-radius: 20px;
 }
 
 .contact-us {
