@@ -16,12 +16,12 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="#">home</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">works</a></li>
-          <li><a href="#">clients</a></li>
-          <li><a href="#">team</a></li>
-          <li><a href="#">prices</a></li>
-          <li><a href="#">contacts</a></li>
+          <li><a class="js-services-button" href="#">services</a></li>
+          <li><a class="js-works-button" href="#">works</a></li>
+          <li><a class="js-clients-button" href="#">clients</a></li>
+          <li><a class="js-team-button" href="#">team</a></li>
+          <li><a class="js-prices-button" href="#">prices</a></li>
+          <li><a class="js-contacts-button" href="#">contacts</a></li>
         </ul>
         <!--<a class="menu-link">menu<span></span></a>-->
       </nav>
@@ -33,7 +33,7 @@
         <h1>Something Nothing</h1>
         <p>Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi
         eleifend tellus.</p>
-        <a class="link-type" href="#">LET’S TALK</a>
+        <a class="link-type" id="js-lets-talk" href="#">LET’S TALK</a>
       </div>
       <a href="#" class="title-circle"><span class="visually-hidden">Continue to look site</span>
         <span class="arrow"></span>
@@ -42,7 +42,7 @@
       </a>
     </section>
 
-    <section class="services">
+    <section class="services js-services">
       <div class="container">
         <h2 class="classic-header">SERVICES</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -80,7 +80,7 @@
       </div>
 
     </section>
-    <section class="works">
+    <section class="works js-works">
       <div class="container">
         <h2 class="classic-header">WORKS</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -102,9 +102,9 @@
           <li class="work-item"><a href=""><span class="work-name">BOOMING SHOP</span><span class="work-type">Website Development</span></a><img width="320" height="200" src="img/ss-drib.jpg" alt="Some site"></li>
         </ul>
       </div>
-      
+
     </section>
-    <section class="clients">
+    <section class="clients js-clients">
       <div class="container">
         <h2 class="classic-header">HAPPY CLIENTS</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section class="team">
+    <section class="team js-team">
       <div class="container">
         <h2 class="classic-header">OUR PROFESSIONAL TEAM</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -280,7 +280,7 @@
       </ul>
     </section>
 
-    <section class="prices">
+    <section class="prices js-prices">
       <div class="container">
         <h2 class="classic-header">PRICING TABLE</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -328,10 +328,10 @@
       </div>
     </section>
 
-    <section class="contact-us">
+    <section class="contact-us js-contacts">
       <h2 class="visually-hidden">Contact us</h2>
       <div class="contact-column map-column">
-        
+
       </div>
       <div class="contact-column">
         <form class="contact-form" method="GET" action="/html">
@@ -351,7 +351,7 @@
             <label for="message-field">Message</label>
             <textarea name="client-message" id="message-field" cols="40" rows="10"></textarea>
           </div>
-          <button class="form-submit" type="submit">Submit</button>
+          <button class="form-submit" id="js-scroll-to-up" type="submit">Submit</button>
         </form>
       </div>
     </section>
@@ -376,6 +376,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
