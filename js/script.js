@@ -1,3 +1,14 @@
+// Скролл меню
+
+$(".js-scroll-down").click(function(evt){
+  evt.preventDefault();
+  var servicesOffset = $(".js-services").offset().top;
+
+  $("html, body").animate({
+    scrollTop: servicesOffset
+  }, 400);
+});
+
 $(".js-services-button").click(function(evt){
   evt.preventDefault();
   var servicesOffset = $(".js-services").offset().top;
@@ -50,4 +61,22 @@ $(".js-contacts-button").click(function(evt){
   $("html, body").animate({
     scrollTop: contactsOffset
   }, 400);
+});
+
+//Фиксируем хеадер при скролле
+
+
+
+$(document).scroll(function(){
+
+  var titleHeight = $(".js-title").height();
+  var documentScroll = $(this).scrollTop();
+
+  if (documentScroll > titleHeight) {
+    $(".main-header").addClass("js-header-fixed");
+  } else {
+    $(".main-header").removeClass("js-header-fixed");
+  }
+
+  console.log(documentScroll);
 });
