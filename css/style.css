@@ -55,6 +55,8 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1170px;
+
+  outline: 1px solid orange;
 }
 
 .main-header {
