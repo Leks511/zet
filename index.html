@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,Open+Sans:400,700,800" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
   <title>ZET</title>
 </head>
@@ -15,34 +17,34 @@
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="#">home</a></li>
-          <li><a class="js-services-button" href="#">services</a></li>
-          <li><a class="js-works-button" href="#">works</a></li>
-          <li><a class="js-clients-button" href="#">clients</a></li>
-          <li><a class="js-team-button" href="#">team</a></li>
-          <li><a class="js-prices-button" href="#">prices</a></li>
-          <li><a class="js-contacts-button" href="#">contacts</a></li>
+          <li><a class="hover-transition js-home-button" href="#js-home">home</a></li>
+          <li><a class="hover-transition js-services-button" href="#js-services">services</a></li>
+          <li><a class="hover-transition" href="#js-works">works</a></li>
+          <li><a class="hover-transition" href="#js-clients">clients</a></li>
+          <li><a class="hover-transition" href="#js-team">team</a></li>
+          <li><a class="hover-transition" href="#js-prices">prices</a></li>
+          <li><a class="hover-transition" href="#js-contacts">contacts</a></li>
         </ul>
         <!--<a class="menu-link">menu<span></span></a>-->
       </nav>
     </div>
   </header>
   <main>
-    <section class="title js-title" id="js-title">
+    <section class="title js-title" id="js-home">
       <div class="title-text">
         <h1>Something Nothing</h1>
         <p>Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi
         eleifend tellus.</p>
-        <a class="link-type" id="js-lets-talk" href="#">LET’S TALK</a>
+        <a class="link-type" href="#js-prices" id="js-prices-button">LET’S TALK</a>
       </div>
-      <a href="#" class="title-circle js-scroll-down"><span class="visually-hidden">Continue to look site</span>
+      <a href="#" class="title-circle" id="js-scroll-down"><span class="visually-hidden">Continue to look site</span>
         <span class="arrow"></span>
         <span class="circle"></span>
         <span class="vertical-line"></span>
       </a>
     </section>
 
-    <section class="services js-services">
+    <section class="services" id="js-services">
       <div class="container">
         <h2 class="classic-header">SERVICES</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -80,7 +82,7 @@
       </div>
 
     </section>
-    <section class="works js-works">
+    <section class="works" id="js-works">
       <div class="container">
         <h2 class="classic-header">WORKS</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -104,11 +106,10 @@
       </div>
 
     </section>
-    <section class="clients js-clients">
-      <div class="container">
+    <section class="clients" id="js-clients">
         <h2 class="classic-header">HAPPY CLIENTS</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
-        <ul class="comment-list">
+        <ul class="comment-list" id="js-clients-slider">
           <li class="comment-item">
             <p class="comment-text">Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang; lek-lekan? Madeg pendhet lenggah,
             "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa Ipsum nangis rumput wilujeng unyeng-unyeng; pados
@@ -117,22 +118,24 @@
             <h3 class="author-name">Vasily Nganu</h3>
             <p class="author-position">Dropbox Senior Developer</p>
           </li>
+          <li class="comment-item">
+            <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam mollitia ea dignissimos necessitatibus nemo voluptatibus facilis enim, deserunt soluta libero vel eos dolorem quaerat laudantium officia minus earum praesentium quibusdam esse architecto possimus atque repellendus!
+            </p>
+            <img class="author-photo" width="65" height="65" src="img/adam.jpg" alt="Photo of comments author">
+            <h3 class="author-name">Vasily Nganu</h3>
+            <p class="author-position">Dropbox Senior Developer</p>
+          </li>
+          <li class="comment-item">
+            <p class="comment-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem animi expedita deleniti magnam provident pariatur unde quae repellendus quaerat ea earum dolorum saepe, iste at officiis cupiditate illum deserunt labore, porro ex maiores voluptatem. Accusamus eaque quod temporibus! Voluptatum magni inventore sunt, dicta dignissimos alias dolorem exercitationem autem nobis excepturi.
+            </p>
+            <img class="author-photo" width="65" height="65" src="img/adam.jpg" alt="Photo of comments author">
+            <h3 class="author-name">Vasily Nganu</h3>
+            <p class="author-position">Dropbox Senior Developer</p>
+          </li>
         </ul>
-        <ul class="dots">
-          <li class="dot active">
-            <span></span>
-          </li>
-          <li class="dot">
-            <span></span>
-          </li>
-          <li class="dot">
-            <span></span>
-          </li>
-        </ul>
-      </div>
     </section>
 
-    <section class="team js-team">
+    <section class="team" id="js-team">
       <div class="container">
         <h2 class="classic-header">OUR PROFESSIONAL TEAM</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -280,7 +283,7 @@
       </ul>
     </section>
 
-    <section class="prices js-prices">
+    <section class="prices" id="js-prices">
       <div class="container">
         <h2 class="classic-header">PRICING TABLE</h2>
         <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
@@ -328,11 +331,13 @@
       </div>
     </section>
 
-    <section class="contact-us js-contacts">
+    <section class="contact-us" id="js-contacts">
       <h2 class="visually-hidden">Contact us</h2>
-      <div class="contact-column map-column">
 
+      <div class="contact-column map-column">
+        <div class="contact-map" id="map"></div>
       </div>
+
       <div class="contact-column">
         <form class="contact-form" method="GET" action="/html">
           <p class="form-part">
@@ -376,7 +381,13 @@
       </section>
     </div>
   </footer>
+
   <script src="js/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/js-header.js"></script>
+  <script src="js/clients-slider.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=59611515-3008-493b-b58f-3bccf99fa978"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
