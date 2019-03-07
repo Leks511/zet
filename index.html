@@ -2,8 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,Open+Sans:400,700,800" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,63 +18,58 @@
         <img src="img/zet-logo.png" alt="ZET logo" width="84" height="31">
       </div>
       <nav class="main-navigation">
-        <ul class="site-navigation">
+        <ul class="site-navigation" id="js-site-navigation">
           <li><a class="hover-transition js-home-button" href="#js-home">home</a></li>
           <li><a class="hover-transition js-services-button" href="#js-services">services</a></li>
-          <li><a class="hover-transition" href="#js-works">works</a></li>
-          <li><a class="hover-transition" href="#js-clients">clients</a></li>
-          <li><a class="hover-transition" href="#js-team">team</a></li>
-          <li><a class="hover-transition" href="#js-prices">prices</a></li>
-          <li><a class="hover-transition" href="#js-contacts">contacts</a></li>
+          <li><a href="#js-works">works</a></li>
+          <li><a href="#js-clients">clients</a></li>
+          <li><a href="#js-team">team</a></li>
+          <li><a href="#js-prices">prices</a></li>
+          <li><a href="#js-contacts">contacts</a></li>
         </ul>
-        <!--<a class="menu-link">menu<span></span></a>-->
+        <a class="menu-link" id="js-adaptive-menu">menu<span></span></a>
       </nav>
     </div>
   </header>
   <main>
     <section class="title js-title" id="js-home">
       <div class="title-text">
-        <h1>Something Nothing</h1>
-        <p>Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi
-        eleifend tellus.</p>
-        <a class="link-type" href="#js-prices" id="js-prices-button">LET’S TALK</a>
+        <h1 class="wow fadeIn">Something Nothing</h1>
+        <p class="typingText">Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi
+        eleifend tellus. </p>
+        <a class="link-type wow fadeInUp" data-wow-duration="2s" href="#js-prices" id="js-prices-button">LET’S TALK</a>
       </div>
-      <a href="#" class="title-circle" id="js-scroll-down"><span class="visually-hidden">Continue to look site</span>
-        <span class="arrow"></span>
-        <span class="circle"></span>
-        <span class="vertical-line"></span>
-      </a>
     </section>
 
     <section class="services" id="js-services">
       <div class="container">
-        <h2 class="classic-header">SERVICES</h2>
-        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+        <h2 class="classic-header wow fadeIn">SERVICES</h2>
+        <p class="typingText">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="service-list">
-          <li class="service-item">
-            <img src="img/laptop3.png" alt="" width="120" height="120">
+          <li class="service-item wow fadeInLeft" data-wow-delay="0.4s">
+            <img class="wow pulse" data-wow-delay="1.5s" src="img/laptop3.png" alt="" width="120" height="120">
             <div class="service-text-wrap">
               <h3>FULLY RESPONSIVE</h3>
               <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
             </div>
           </li>
-          <li class="service-item">
-            <img src="img/adjust2.png" alt="" width="120" height="120">
+          <li class="service-item wow fadeInLeft" data-wow-delay="0.3s">
+            <img class="wow pulse" data-wow-delay="1.5s" src="img/adjust2.png" alt="" width="120" height="120">
             <div class="service-text-wrap">
               <h3>EASY CUSTOMIZE</h3>
               <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
               vitae.</p>
             </div>
           </li>
-          <li class="service-item">
-            <img src="img/map7.png" alt="" width="120" height="120">
+          <li class="service-item wow fadeInLeft" data-wow-delay="0.2s">
+            <img class="wow pulse" data-wow-delay="1.5s" src="img/map7.png" alt="" width="120" height="120">
             <div class="service-text-wrap">
               <h3>SEO READY</h3>
               <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi</p>
             </div>
           </li>
-          <li class="service-item">
-            <img src="img/heart19.png" alt="" width="120" height="120">
+          <li class="service-item wow fadeInLeft" data-wow-delay="0.1s">
+            <img class="wow pulse" data-wow-delay="1.5s" src="img/heart19.png" alt="" width="120" height="120">
             <div class="service-text-wrap">
               <h3>MADE WITH LOVE</h3>
               <p>ecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero. vulputate eget, arcu.</p>
@@ -84,10 +81,16 @@
     </section>
     <section class="works" id="js-works">
       <div class="container">
-        <h2 class="classic-header">WORKS</h2>
-        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+        <h2 class="classic-header wow fadeIn">WORKS</h2>
+        <p class="typingText">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="work-list">
-          <li class="work-item"><a href=""><span class="work-name">BOOMING SHOP</span><span class="work-type">Website Development</span></a><img width="320" height="200" src="img/2.jpg" alt="Some site"></li>
+          <li class="work-item">
+            <a href="">
+              <span class="work-name">BOOMING SHOP</span>
+              <span class="work-type">Website Development</span>
+            </a>
+            <img width="320" height="200" src="img/2.jpg" alt="Some site">
+          </li>
           <li class="work-item"><a href=""><span class="work-name">BOOMING SHOP</span><span class="work-type">Website Development</span></a><img width="320" height="200" src="img/4.jpg" alt="Some site"></li>
           <li class="work-item"><a href=""><span class="work-name">BOOMING SHOP</span><span class="work-type">Website Development</span></a><img width="320" height="200" src="img/1.jpg" alt="Some site"></li>
           <li class="work-item"><a href=""><span class="work-name">BOOMING SHOP</span><span class="work-type">Website Development</span></a><img width="320" height="200" src="img/5.jpg" alt="Some site"></li>
@@ -104,11 +107,11 @@
           <li class="work-item"><a href=""><span class="work-name">BOOMING SHOP</span><span class="work-type">Website Development</span></a><img width="320" height="200" src="img/ss-drib.jpg" alt="Some site"></li>
         </ul>
       </div>
-
     </section>
+
     <section class="clients" id="js-clients">
-        <h2 class="classic-header">HAPPY CLIENTS</h2>
-        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+        <h2 class="classic-header wow fadeIn">HAPPY CLIENTS</h2>
+        <p class="typingText">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="comment-list" id="js-clients-slider">
           <li class="comment-item">
             <p class="comment-text">Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang; lek-lekan? Madeg pendhet lenggah,
@@ -137,10 +140,10 @@
 
     <section class="team" id="js-team">
       <div class="container">
-        <h2 class="classic-header">OUR PROFESSIONAL TEAM</h2>
-        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+        <h2 class="classic-header wow fadeIn">OUR PROFESSIONAL TEAM</h2>
+        <p class="typingText">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="team-list">
-          <li class="worker">
+          <li class="worker wow fadeInLeft">
             <p class="photo-container">
               <img class="worker-photo" width="270" height="270" src="img/salazar.jpg" alt="Photo of Salazar Slytherin">
             </p>
@@ -172,7 +175,7 @@
               </ul>
             </div>
           </li>
-          <li class="worker">
+          <li class="worker wow fadeInLeft" data-wow-delay="0.2s">
             <p class="photo-container">
               <img class="worker-photo" width="270" height="270" src="img/gryffindor.jpg" alt="Photo of GodricT Gryffindor">
             </p>
@@ -204,7 +207,7 @@
               </ul>
             </div>
           </li>
-          <li class="worker">
+          <li class="worker wow fadeInLeft" data-wow-delay="0.4s">
             <p class="photo-container">
               <img class="worker-photo" width="270" height="270" src="img/ravenclaw.jpg" alt="Photo of Rowena Ravenclaw">
             </p>
@@ -236,7 +239,7 @@
               </ul>
             </div>
           </li>
-          <li class="worker">
+          <li class="worker wow fadeInLeft" data-wow-delay="0.6s">
             <p class="photo-container">
               <img class="worker-photo" width="270" height="270" src="img/hufflepuff.jpg" alt="Photo of Helga Hufflepuff">
             </p>
@@ -268,65 +271,27 @@
             </div>
           </li>
         </ul>
-        <a class="link-type" href="">MEET OUR FULL TEAM</a>
+        <a class="link-type wow zoomInUp" data-wow-duration="2s">MEET OUR FULL TEAM</a>
       </div>
     </section>
 
     <section class="partners">
       <h2 class="visually-hidden">OUR PARTNERS</h2>
       <ul class="partners-list">
-        <li class="partners-item"><a href="#"><span class="visually-hidden">Coca-Cola</span><img src="img/1280px-Coca-Cola_logo.png" alt="Logo of Coca Cola" width="135" height="44"></a></li>
-        <li class="partners-item"><a href="#"><span class="visually-hidden">Dropbox</span><img src="img/Dropbox_logo_(September_2013).png" alt="Logo of Dropbox" width="154" height="42"></a></li>
-        <li class="partners-item"><a href="#"><span class="visually-hidden">Intel</span><img src="img/293px-Intel-logo.png" alt="Logo of Intel" width="96" height="64"></a></li>
-        <li class="partners-item"><a href="#"><span class="visually-hidden">Zendesk</span><img src="img/Zendesk_logo_RGB.png" alt="Logo of Zendesk" width="166" height="39"></a></li>
-        <li class="partners-item"><a href="#"><span class="visually-hidden">Nokia</span><img src="img/1280px-Nokia_wordmark.png" alt="Logo of Nokia" width="150" height="25"></a></li>
+        <li class="partners-item wow flipInY"><a href="#"><span class="visually-hidden">Coca-Cola</span><img class="wow pulse" data-wow-delay="1s" src="img/1280px-Coca-Cola_logo.png" alt="Logo of Coca Cola" width="135" height="44"></a></li>
+        <li class="partners-item wow flipInY" data-wow-delay="0.05s"><a href="#"><span class="visually-hidden">Dropbox</span><img class="wow pulse" data-wow-delay="1s" src="img/Dropbox_logo_(September_2013).png" alt="Logo of Dropbox" width="154" height="42"></a></li>
+        <li class="partners-item wow flipInY" data-wow-delay="0.1s"><a href="#"><span class="visually-hidden">Intel</span><img class="wow pulse" data-wow-delay="1s" src="img/293px-Intel-logo.png" alt="Logo of Intel" width="96" height="64"></a></li>
+        <li class="partners-item wow flipInY" data-wow-delay="0.15s"><a href="#"><span class="visually-hidden">Zendesk</span><img class="wow pulse" data-wow-delay="1s" src="img/Zendesk_logo_RGB.png" alt="Logo of Zendesk" width="166" height="39"></a></li>
+        <li class="partners-item wow flipInY" data-wow-delay="0.2s"><a href="#"><span class="visually-hidden">Nokia</span><img class="wow pulse" data-wow-delay="1s" src="img/1280px-Nokia_wordmark.png" alt="Logo of Nokia" width="150" height="25"></a></li>
       </ul>
     </section>
 
     <section class="prices" id="js-prices">
       <div class="container">
-        <h2 class="classic-header">PRICING TABLE</h2>
-        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+        <h2 class="classic-header wow fadeIn">PRICING TABLE</h2>
+        <p class="typingText">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="pack-list">
-          <li class="pack-item">
-            <div class="pack-head-wrapper">
-              <h3 class="pack-name">Standard Pack</h3>
-              <p class="pack-price"><span class="price">$50</span>PER MONTH</p>
-            </div>
-            <div class="pack-description-wrapper">
-              <p class="pack-description">exercitation ullaborum sed do
-                eiusmod tempor incididunt ut quis
-                nostrud exercitation ullamco laboris</p>
-            </div>
-            <a class="pack-sign" href="#">SIGN UP</a>
-          </li>
-          <li class="pack-item best-pack">
-            <div class="pack-head-wrapper">
-              <h3 class="pack-name">Best Pack</h3>
-              <p class="pack-price"><span class="price">$100</span>PER MONTH</p>
-            </div>
-            <div class="pack-description-wrapper">
-              <p class="pack-description">eiusmod tempor incididunt ut quis
-                nostrud exercitation ullamco laboris
-                minim aliqua labore dolore nostrud
-                laboris ullamco incididunt quis</p>
-            </div>
-            <a class="pack-sign" href="#">SIGN UP</a>
-          </li>
-          <li class="pack-item">
-            <div class="pack-head-wrapper">
-              <h3 class="pack-name">VIP Pack</h3>
-              <p class="pack-price"><span class="price">$250</span>PER MONTH</p>
-            </div>
-            <div class="pack-description-wrapper">
-              <p class="pack-description">incididunt ut labore et dolore magna
-                aliqua Ut enim ad minim veniam quis nostrud
-                exercitation ullaborum sed do
-                eiusmod tempor incididunt ut quis
-                nostrud exercitation ullamco laboris</p>
-            </div>
-            <a class="pack-sign" href="#">SIGN UP</a>
-          </li>
+          Скоро добавим
         </ul>
       </div>
     </section>
@@ -342,23 +307,23 @@
 
       <div class="contact-column">
         <form class="contact-form" method="GET" action="/html">
-          <p class="form-part">
+          <p class="form-part wow fadeIn">
             <label for="client-field">Name</label>
             <input type="text" id="client-field" name="client-name">
           </p>
-          <p class="form-part">
+          <p class="form-part wow fadeIn">
             <label for="email-field">Email</label>
             <input type="email" id="email-field" name="client-email">
           </p>
-          <p class="form-part">
+          <p class="form-part wow fadeIn">
             <label for="phone-field">Phone</label>
             <input type="text" id="phone-field" name="client-phone">
           </p>
-          <div class="form-part">
+          <div class="form-part wow fadeIn">
             <label for="message-field">Message</label>
             <textarea name="client-message" id="message-field" cols="40" rows="10"></textarea>
           </div>
-          <button class="form-submit" id="js-scroll-to-up" type="submit">Submit</button>
+          <button class="form-submit wow fadeIn" id="js-scroll-to-up" type="submit">Submit</button>
         </form>
       </div>
     </section>
@@ -385,10 +350,14 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
+
+  <script src="js/wow.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/js-header.js"></script>
+  <script src="js/adaptive-menu.js"></script>
   <script src="js/clients-slider.js"></script>
-
+  <script src="js/custom.js"></script>
 </body>
 </html>
